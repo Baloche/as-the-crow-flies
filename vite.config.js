@@ -1,13 +1,14 @@
-const { resolve } = require('path')
-const { defineConfig } = require('vite')
+const { resolve } = require("path");
+const { defineConfig } = require("vite");
 
 module.exports = defineConfig({
+  base: "/as-the-crow-flies/",
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        stage: resolve(__dirname, 'stage.html')
-      }
-    }
-  }
-})
+        "": resolve(__dirname, "index.html"),
+        stage: resolve(__dirname, "stage/index.html"),
+      },
+    },
+  },
+});

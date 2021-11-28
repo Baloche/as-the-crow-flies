@@ -1,9 +1,9 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: ["./**/*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Josefin Sans"', 'sans-serif'],
+      sans: ['"Josefin Sans"', "sans-serif"],
     },
     extend: {},
   },
@@ -11,4 +11,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

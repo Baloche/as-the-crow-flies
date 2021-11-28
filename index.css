@@ -1,23 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  .my-card {
-    @apply p-6 bg-white rounded-xl shadow-sm flex flex-col space-y-4;
-  }
-  .my-link {
-    @apply text-blue-500 underline hover:no-underline;
-  }
-  .my-tag {
-    @apply p-2 text-sm text-center bg-blue-50 rounded-lg text-blue-500 self-center;
-  }
-  .my-alert {
-    @apply p-3 text-sm text-center bg-blue-50 rounded-lg text-blue-500 self-center space-y-2;
-  }
-  .my-button {
-    @apply py-2 px-4 text-xl text-white text-center bg-blue-500 rounded-md self-center space-y-2;
-  }
+.my-button {
+  @apply py-2 px-4 text-xl text-white text-center bg-blue-500 rounded-md self-center space-y-2;
+}
+.my-card {
+  @apply p-6 bg-white rounded-xl shadow-sm flex flex-col space-y-4;
+}
+.my-link {
+  @apply text-blue-500 underline hover:no-underline;
+}
+.my-tag {
+  @apply p-2 text-sm text-center bg-blue-50 rounded-lg text-blue-500 self-center;
+}
+.my-alert {
+  @apply p-3 text-sm text-center bg-blue-50 rounded-lg text-blue-500 self-center space-y-2;
 }
 
 @media (min-width: 640px) {
@@ -25,6 +19,10 @@
     transform: perspective(800px) rotateY(15deg);
   }
 }
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
 
 body {
   @apply bg-gray-200 mx-auto mt-16 text-gray-700 max-w-5xl flex flex-col h-auto;
